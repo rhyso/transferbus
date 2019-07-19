@@ -7,9 +7,9 @@ export default function Home() {
     return (
         <div>
             <h1> Home</h1>
-            <p>You clicked {count} times</p>
+            <p>You have booked {count} times</p>
             <button onClick={() => setCount(count + 1)}>
-                Click me
+                Book a seat
             </button>
         </div>
     );

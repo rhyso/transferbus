@@ -1,3 +1,10 @@
+.header{
+    font-family: 'Pacifico', cursive;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
 nav ul {
     list-style: none;
     background-color: #39B;
@@ -43,5 +50,75 @@ nav a.active {
     nav li {
         display: inline-block;
         margin-right: -4px;
+    }
+}
+
+
+
+
+
+/*bus*/
+
+
+  .wrapper{
+      width:320px;
+      margin:0 auto;
+      padding-top:5%;
+      position:relative;
+  }
+.wrapper-2{
+    width:14%;
+    margin:0 auto;
+    text-align:right;
+}
+.bus{
+    width:20%;
+    z-index:10;
+    animation: bounce 100ms infinite alternate;
+}
+.road{
+    position:absolute;
+    bottom:2px;
+    right:150px;
+    animation: road 1s ease-out infinite;
+}
+
+@keyframes road{
+    0%{
+        transform: translateX(0);
+    }
+    75%{
+        opacity:1;
+    }
+    100%{
+        transform: translateX(-250%);
+        opacity:0;
+    }
+
+}
+
+@keyframes size{
+    from{
+        transform: scale3d(0.75, 0.75, 0.75);
+        transform: translateX(-350%);
+
+    }
+
+    20%{
+        transform: scale3d(1, 1, 1);
+    }
+
+    to {
+        transform: scale3d(0.75, 0.75, 0.75);
+        transform: translateX(-350%);
+    }
+}
+
+@keyframes bounce{
+    0%{
+        transform:translateY(0)
+    }
+    100%{
+        transform:translateY(-1%)
     }
 }
